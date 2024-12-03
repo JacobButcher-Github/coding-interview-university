@@ -14,45 +14,6 @@
 >
 > *Best of luck to you!*
 
-<details>
-<summary>Translations:</summary>
-
-- [Bahasa Indonesia](translations/README-id.md)
-- [Bulgarian](translations/README-bg.md)
-- [Español](translations/README-es.md)
-- [German](translations/README-de.md)
-- [Japanese (日本語)](translations/README-ja.md)
-- [Marathi](translations/README-mr.md)
-- [Polish](translations/README-pl.md)
-- [Português Brasileiro](translations/README-ptbr.md)
-- [Russian](translations/README-ru.md)
-- [Tiếng Việt - Vietnamese](translations/README-vi.md)
-- [Urdu - اردو](translations/README-ur.md)
-- [Uzbek](translations/README-uz.md)
-- [বাংলা - Bangla](translations/README-bn.md)
-- [ខ្មែរ - Khmer](translations/README-kh.md)
-- [简体中文](translations/README-cn.md)
-- [繁體中文](translations/README-tw.md)
-</details>
-
-<details>
-<summary>Translations in progress:</summary>
-
-- [Afrikaans](https://github.com/jwasham/coding-interview-university/issues/1164)
-- [Arabic](https://github.com/jwasham/coding-interview-university/issues/98)
-- [French](https://github.com/jwasham/coding-interview-university/issues/89)
-- [Greek](https://github.com/jwasham/coding-interview-university/issues/166)
-- [Italian](https://github.com/jwasham/coding-interview-university/issues/1030)
-- [Korean(한국어)](https://github.com/jwasham/coding-interview-university/issues/118)
-- [Malayalam](https://github.com/jwasham/coding-interview-university/issues/239)
-- [Persian - Farsi](https://github.com/jwasham/coding-interview-university/issues/186)
-- [Telugu](https://github.com/jwasham/coding-interview-university/issues/117)
-- [Thai](https://github.com/jwasham/coding-interview-university/issues/156)
-- [Turkish](https://github.com/jwasham/coding-interview-university/issues/90)
-- [Українська](https://github.com/jwasham/coding-interview-university/issues/106)
-- [עברית](https://github.com/jwasham/coding-interview-university/issues/82)
-- [हिन्दी](https://github.com/jwasham/coding-interview-university/issues/81)
-</details>
 
 <div align="center">
 	<hr />
@@ -621,20 +582,20 @@ if you can identify the runtime complexity of different algorithms. It's a super
         - [x] capacity() - number of items it can hold
         - [x] is_empty()
         - [x] at(index) - returns the item at a given index, blows up if index out of bounds
-        - [ ] push(item)
-        - [ ] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
-        - [ ] prepend(item) - can use insert above at index 0
-        - [ ] pop() - remove from end, return value
-        - [ ] delete(index) - delete item at index, shifting all trailing elements left
-        - [ ] remove(item) - looks for value and removes index holding it (even if in multiple places)
-        - [ ] find(item) - looks for value and returns first index with that value, -1 if not found
-        - [ ] resize(new_capacity) // private function
+        - [x] push(item)
+        - [x] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
+        - [x] prepend(item) - can use insert above at index 0
+        - [x] pop() - remove from end, return value
+        - [x] delete(index) - delete item at index, shifting all trailing elements left
+        - [x] remove(item) - looks for value and removes index holding it (even if in multiple places)
+        - [x] find(item) - looks for value and returns first index with that value, -1 if not found
+        - [x] resize(new_capacity) // private function
             - when you reach capacity, resize to double the size
             - when popping an item, if the size is 1/4 of capacity, resize to half
-    - [ ] Time
+    - [x] Time
         - O(1) to add/remove at end (amortized for allocations for more space), index, or update
         - O(n) to insert/remove elsewhere
-    - [ ] Space
+    - [x] Space
         - contiguous in memory, so proximity helps performance
         - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
 
