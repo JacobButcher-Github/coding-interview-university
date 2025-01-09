@@ -1,0 +1,3 @@
+class LinkedListTail:
+    def __init__(self) -> None:
+        ...
